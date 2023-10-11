@@ -112,10 +112,7 @@ h6 {
 
 }
 
-.message,
-.success,
-.error,
-.warning {
+.message{
  border: 1px solid #ccc;
  padding: $same-padding;
  margin: 16px;
@@ -125,12 +122,15 @@ h6 {
 
 .success {
  background-color: green;
+ @extend .message;
 }
 
 .error {
  background-color: red;
+ @extend .message;
 }
 
 .warning {
  background-color: orange;
+ @extend .message;
 }
