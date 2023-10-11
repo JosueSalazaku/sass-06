@@ -20,6 +20,8 @@ body {
  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
  background-attachment: fixed;
 }
+ 
+@import 'variables';
 
 @mixin box-shadow {
  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
@@ -28,6 +30,31 @@ body {
 }
 
 $same-padding: 16px;
+
+.color-change {
+ @extend article;
+ text-align: center;
+  
+
+
+}
+
+.red {
+ color:rgb(255, 0, 0) ;
+ text-decoration: none;
+ display: flex;
+ flex-direction: row;
+}
+
+.blue {
+ color:rgb(8, 0, 243) ;
+ text-decoration: none;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ align-items: start;
+}
+
 
 article {
  display: flex;
@@ -134,3 +161,4 @@ h6 {
  background-color: orange;
  @extend .message;
 }
+

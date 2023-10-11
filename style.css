@@ -10,11 +10,31 @@ body {
   background-attachment: fixed;
 }
 
-article {
+.color-change {
+  text-align: center;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.blue {
+  color: rgb(8, 0, 243);
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: start;
+}
+
+article, .color-change {
   display: flex;
   flex-wrap: wrap;
 }
-article section {
+article section, .color-change section {
   flex-grow: 1;
   flex-basis: 45%;
   border: 1px silver solid;
@@ -26,7 +46,7 @@ article section {
   box-sizing: border-box;
 }
 
-article section {
+article section, .color-change section {
   flex-grow: 1;
   flex-basis: 45%;
   border: 1px silver solid;
