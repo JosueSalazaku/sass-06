@@ -21,8 +21,8 @@ body {
  background-attachment: fixed;
 }
 @import '_variables'; 
-@import 'red';
-@import 'blue';
+@import '_red';
+@import '_blue';
 
 @mixin box-shadow {
  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
@@ -37,8 +37,20 @@ $same-padding: 16px;
  text-align: center;
 }
 
+a {
+  font-size: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home {
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+}
+
 .red {
- color:rgb(255, 0, 0) ;
+ color:rgb(255, 0, 0);
  text-decoration: none;
  display: flex;
  flex-direction: row;
@@ -53,6 +65,21 @@ $same-padding: 16px;
  align-items: start;
 }
 
+.red-bg {
+  background-color: $red-background;
+  color: $red-body;
+  h1,h2,h6 {
+    color: $red-header;
+  }
+}
+
+.blue-bg {
+  background-color: $blue-background;
+  color: $blue-body;
+  h1,h2,h6 {
+    color: $blue-header;
+  }
+}
 
 article {
  display: flex;

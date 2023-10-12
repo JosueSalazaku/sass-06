@@ -14,6 +14,18 @@ body {
   text-align: center;
 }
 
+a {
+  font-size: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home {
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+}
+
 .red {
   color: rgb(255, 0, 0);
   text-decoration: none;
@@ -28,6 +40,22 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: start;
+}
+
+.red-bg {
+  background-color: rgb(43, 2, 2);
+  color: rgb(252, 212, 212);
+}
+.red-bg h1, .red-bg h2, .red-bg h6 {
+  color: rgb(255, 0, 0);
+}
+
+.blue-bg {
+  background-color: rgb(4, 16, 45);
+  color: rgb(160, 171, 250);
+}
+.blue-bg h1, .blue-bg h2, .blue-bg h6 {
+  color: rgb(0, 46, 253);
 }
 
 article, .color-change {
