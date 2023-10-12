@@ -1,0 +1,15 @@
+$main-colors: rgb(116, 104, 244);
+$main-background: #000;
+$main-background-images: radial-gradient(
+ #fff,
+ rgba(255, 255, 255, 0.2) 2px,
+ transparent 40px
+),
+radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+radial-gradient(
+ rgba(255, 255, 255, 0.4),
+ rgba(255, 255, 255, 0.1) 2px,
+ transparent 30px);
+$main-body: #2748b3;
+
