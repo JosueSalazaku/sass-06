@@ -41,13 +41,10 @@ a {
   flex-direction: row;
   justify-items: flex-end;
 }
-.blue .red, .blue .blue, .blue .home:hover {
-  color: white;
-}
 
 .red-bg {
   background-color: rgb(57, 1, 1);
-  color: rgb(132, 2, 2);
+  color: rgb(120, 12, 12);
 }
 .red-bg h1, .red-bg h2, .red-bg h6 {
   color: rgb(255, 0, 0);

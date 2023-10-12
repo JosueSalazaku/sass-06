@@ -1,3 +1,13 @@
+@use '_blue.scss' as b;
+@use '_red.scss' as r;
+
+@mixin box-shadow {
+ -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+}
+$same-padding: 16px;
+
 body {
  font: 100% "Space Mono", monospace;
  color: #2748b3;
@@ -20,17 +30,6 @@ body {
  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
  background-attachment: fixed;
 }
-@import '_variables'; 
-@import '_red';
-@import '_blue';
-
-@mixin box-shadow {
- -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-}
-
-$same-padding: 16px;
 
 .color-change {
   @extend article;
@@ -40,19 +39,15 @@ $same-padding: 16px;
   justify-content: space-between;
   padding: $same-padding;
 }
-
   
 a {
-  font-size: 15px;
-  
+  font-size: 15px;  
 }
-
 
 .home {
   flex-direction: row;
   color: white;
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
 
 .red {
@@ -60,7 +55,6 @@ a {
  text-decoration: none;
  flex-direction: row;
  border: #ccc;
- 
 }
 
 .blue {
@@ -68,26 +62,21 @@ a {
  text-decoration: none;
  flex-direction: row;
  justify-items: flex-end;
-
- .red, .blue, .home:hover{
-  color: white;
  }
 
-}
-
 .red-bg {
-  background-color: $red-background;
-  color: $red-body;
+  background-color: r.$red-background;
+  color: r.$red-body;
   h1,h2,h6 {
-    color: $red-header;
+    color: r.$red-header;
   }
 }
 
 .blue-bg {
-  background-color: $blue-background;
-  color: $blue-body;
+  background-color: b.$blue-background;
+  color: b.$blue-body;
   h1,h2,h6 {
-    color: $blue-header;
+    color: b.$blue-header;
   }
 }
 
@@ -154,7 +143,6 @@ pre {
  }
 }
 
-
 h1,
 h2,
 h6 {
@@ -170,7 +158,6 @@ h6 {
  font-size: 2em;
  padding: $same-padding * 2;
  margin-bottom: 0px;
-
 }
 
 .message{
