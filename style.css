@@ -11,13 +11,15 @@ body {
 }
 
 .color-change {
+  display: inline-flex;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
 }
 
 a {
-  font-size: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  font-size: 15px;
 }
 
 .home {
@@ -29,22 +31,23 @@ a {
 .red {
   color: rgb(255, 0, 0);
   text-decoration: none;
-  display: flex;
   flex-direction: row;
+  border: #ccc;
 }
 
 .blue {
   color: rgb(8, 0, 243);
   text-decoration: none;
-  display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: start;
+  justify-items: flex-end;
+}
+.blue .red, .blue .blue, .blue .home:hover {
+  color: white;
 }
 
 .red-bg {
-  background-color: rgb(43, 2, 2);
-  color: rgb(252, 212, 212);
+  background-color: rgb(57, 1, 1);
+  color: rgb(132, 2, 2);
 }
 .red-bg h1, .red-bg h2, .red-bg h6 {
   color: rgb(255, 0, 0);
@@ -52,7 +55,7 @@ a {
 
 .blue-bg {
   background-color: rgb(4, 16, 45);
-  color: rgb(160, 171, 250);
+  color: rgb(9, 26, 151);
 }
 .blue-bg h1, .blue-bg h2, .blue-bg h6 {
   color: rgb(0, 46, 253);
@@ -91,7 +94,7 @@ article section, .color-change section {
   flex-basis: 100%;
 }
 #selling-points h2 {
-  color: rgb(116, 104, 244);
+  color: rgb(255, 255, 255);
 }
 
 pre {
@@ -120,7 +123,7 @@ pre .after {
 h1,
 h2,
 h6 {
-  color: #6b8eff;
+  color: #2c4ac1;
 }
 
 h1 {

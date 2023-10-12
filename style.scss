@@ -33,36 +33,46 @@ body {
 $same-padding: 16px;
 
 .color-change {
- @extend article;
- text-align: center;
-}
-
-a {
-  font-size: 20px;
+  @extend article;
+  display: inline-flex;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: $same-padding;
 }
+
+  
+a {
+  font-size: 15px;
+  
+}
+
 
 .home {
   flex-direction: row;
   color: white;
   text-decoration: none;
+  
 }
 
 .red {
  color:rgb(255, 0, 0);
  text-decoration: none;
- display: flex;
  flex-direction: row;
+ border: #ccc;
+ 
 }
 
 .blue {
  color:rgb(8, 0, 243) ;
  text-decoration: none;
- display: flex;
  flex-direction: row;
- justify-content: flex-end;
- align-items: start;
+ justify-items: flex-end;
+
+ .red, .blue, .home:hover{
+  color: white;
+ }
+
 }
 
 .red-bg {
@@ -96,7 +106,6 @@ article {
   overflow: auto;
   box-sizing: border-box;
  }
-
 }
 
 article section {
@@ -116,7 +125,7 @@ article section {
  flex-basis: 100%;
 
  h2 {
-  color: rgb(116, 104, 244);
+  color: rgb(255, 255, 255);
  }
 }
 
@@ -149,7 +158,7 @@ pre {
 h1,
 h2,
 h6 {
- color: #6b8eff;
+ color: #2c4ac1;
 }
 
 h1 {
